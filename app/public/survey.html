@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FriendFinder</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container section">
+        <h1>Friend Finder Survey</h1>
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label>Photo(Link)</label>
+                <input type="text" class="form-control" id="photo">
+            </div>
+            <h3>Question 1</h3>
+            <h4>I like to read books.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q1">
+                    <div class='options'></div>
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+
+            <h3>Question 2</h3>
+            <h4>I like travelling outside the country.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q2">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 3</h3>
+            <h4>I like watching a movie in theatre to watching at home.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q3">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 4</h3>
+            <h4>I prefer to spend time with a few friends rather than a large group.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q4">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 5</h3>
+            <h4>I enjoy sporting events.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q5">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 6</h3>
+            <h4>I enjoy working out in the morning.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q6">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 7</h3>
+            <h4>I like comedy movies as opposed to action movies.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q7">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 8</h3>
+            <h4>I would like to direct a movie in the future.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q8">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 9</h3>
+            <h4>I believe in moral values.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q9">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 10</h3>
+            <h4>I prefer winter over summer.</h4>
+            <div class="form-group">
+                <select class="custom-select" id="q10">
+                    <option value="">Please select an answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div id="center_button">
+                <div id="validate" style="color:red"></div>
+                <button class="btn btn-primary submit" type="submit">Find my Friend</button>
+            </div>
+
+        </form>
+        <br>
+
+
+    </div>
+    <div id="modalDiv" class="container">Your best friend is: <br>
+        <h1 id="friendname"></h1>
+        <div id="friendPhoto"></div>
+    </div>
+    <script>
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+            };
+            var createdArray = Object.values(newFriend);
+
+            if (createdArray.includes("")) {
+
+                $("#validate").text('Enter details on form')
+            } else if (createdArray[2].includes("")) {
+                $("#validate").text('Answer All questions')
+
+            } else {
+                $("#validate").html = ''
+
+                $.post("/data/friends", newFriend,
+                    function (data) {
+                        if (data) {
+                            $('.section').empty();
+                            $(".friendname").html('<h4>' + data.name + '</h4>');
+                            $("#friendPhoto").html(" <img src = " + data.photo + "\ " + ">");
+                            $('#friendPhoto').append('<p><button id ="refresh">Take the Survey Again</button></p>');
+
+                            $("#refresh").on('click', function () {
+                                location.reload();
+                            })
+                        }
+
+                    });
+            }
+        });
+    </script>
+</body>
+
+</html>
